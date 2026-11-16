@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>OvIAmigo | IA sin humo para tu negocio</title>
-<meta name="description" content="Tu amigo con IA para negocios de Paraguay y de cualquier país. Sin humo y con humor. Videos en Instagram, TikTok, YouTube y X.">
+<meta name="description" content="Tu amigo con IA para negocios de Paraguay y de cualquier país. Webs, videos, WhatsApp con IA, dominio y más. Sin humo y con humor.">
 <meta property="og:title" content="OvIAmigo | IA sin humo para tu negocio">
 <meta property="og:description" content="IA que sí sirve para tu negocio, sin humo y con humor.">
 <meta name="theme-color" content="#FFD60A">
@@ -78,6 +78,9 @@
   .tt .icon { background: #111; }
   .yt .icon { background: #FF0000; }
   .x .icon { background: #000; }
+  .web .icon { background: var(--sky); font-size: 26px; }
+  .serv .icon { background: var(--pop); font-size: 26px; }
+  .bot .icon { background: var(--sun); font-size: 26px; }
 
   /* calculadora */
   .calc { background: var(--card); border: 3px solid var(--edge); border-radius: 20px; box-shadow: 0 6px 0 var(--edge); overflow: hidden; }
@@ -188,17 +191,17 @@
   </header>
 
   <nav class="links" aria-label="Enlaces de OvIAmigo">
-    <a class="btn ig" href="https://www.instagram.com/oviamigo" target="_blank" rel="noopener">
+    <a class="btn ig" href="https://www.instagram.com/oviamigoo" target="_blank" rel="noopener">
       <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1.1" fill="#fff" stroke="none"/></svg></span>
-      <span><span class="label">Instagram</span><span class="detail">@oviamigo, videos nuevos todos los días</span></span>
+      <span><span class="label">Instagram</span><span class="detail">@oviamigoo, videos nuevos todos los días</span></span>
     </a>
     <a class="btn tt" href="https://www.tiktok.com/@oviamigo" target="_blank" rel="noopener">
       <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M15.5 3c.4 2.3 1.9 3.9 4.2 4.1v3c-1.6 0-3-.5-4.2-1.3v6.4a5.6 5.6 0 1 1-5.6-5.6c.3 0 .6 0 .9.1v3.1a2.6 2.6 0 1 0 1.8 2.4V3h2.9z" fill="#fff"/></svg></span>
       <span><span class="label">TikTok</span><span class="detail">@oviamigo</span></span>
     </a>
-    <a class="btn yt" href="https://www.youtube.com/@oviamigo" target="_blank" rel="noopener">
+    <a class="btn yt" href="https://www.youtube.com/@oviamigoo" target="_blank" rel="noopener">
       <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9.5 8.2v7.6L16 12z" fill="#fff"/></svg></span>
-      <span><span class="label">YouTube</span><span class="detail">@oviamigo, Shorts y videos</span></span>
+      <span><span class="label">YouTube</span><span class="detail">@oviamigoo, Shorts y videos</span></span>
     </a>
     <a class="btn x" href="https://x.com/oviamigoo" target="_blank" rel="noopener">
       <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M17.8 3h3.1l-6.8 7.8L22 21h-6.2l-4.9-6.4L5.3 21H2.2l7.3-8.3L2 3h6.4l4.4 5.8L17.8 3zm-1.1 16.2h1.7L7.4 4.7H5.6l11.1 14.5z" fill="#fff"/></svg></span>
@@ -208,7 +211,7 @@
     <details class="calc lead" id="f-card">
       <summary>
         <span class="icon" aria-hidden="true">🛠️</span>
-        <span><span class="label">Mirá lo que puedo hacer por tu negocio</span><span class="detail">15 servicios. Elegí los que te interesan y yo te escribo</span></span>
+        <span><span class="label">Mirá lo que puedo hacer por tu negocio</span><span class="detail">21 servicios. Elegí los que te interesan y yo te escribo</span></span>
       </summary>
       <div class="chat-wrap">
         <div class="steps" aria-hidden="true"><span id="st-txt">Paso 1 de 6</span><span class="bar"><i id="st-bar"></i></span></div>
@@ -219,30 +222,18 @@
       </div>
     </details>
 
-    <details class="calc">
-      <summary>
-        <span class="icon" aria-hidden="true">🧮</span>
-        <span><span class="label">¿Cuánto te cuesta responder tarde?</span><span class="detail">Hacé la cuenta con los números de tu negocio</span></span>
-      </summary>
-      <div class="calc-body">
-        <div class="row"><label for="c-in">Consultas que te llegan por día</label><input id="c-in" type="number" inputmode="numeric" min="0" value="5"></div>
-        <div class="row"><label for="c-lost">De esas, cuántas se van por responder tarde</label><input id="c-lost" type="number" inputmode="decimal" min="0" step="0.5" value="1"></div>
-        <div class="row"><label for="c-cur">Tu moneda</label><select id="c-cur"><option value="₲">₲ Guaraníes</option><option value="US$">US$ Dólares</option><option value="€">€ Euros</option><option value="$">$ Pesos</option><option value="R$">R$ Reales</option><option value="S/">S/ Soles</option><option value="Bs">Bs Bolivianos</option></select></div>
-        <div class="row"><label for="c-price">Venta promedio</label><input id="c-price" type="text" inputmode="numeric" value="200.000"></div>
-        <div class="row"><label for="c-days">Días que trabajás al mes</label><input id="c-days" type="number" inputmode="numeric" min="0" max="31" value="26"></div>
-        <div class="result" aria-live="polite">
-          <span class="big" id="c-month">₲5.200.000</span>
-          <p>al mes en ventas que se te escapan</p>
-          <p id="c-year">≈ ₲62.400.000 al año</p>
-          <p id="c-rate">Perdés 1 de cada 5 consultas</p>
-        </div>
-        <p class="note">Es una estimación de ventas, no de ganancia. Sirve para ver el tamaño de la fuga.</p>
-        <button class="btn as-btn" id="c-send" type="button">
-          <span class="icon" aria-hidden="true" style="background: var(--pop)">📩</span>
-          <span><span class="label">Quiero ayuda con esto</span><span class="detail">Pedí tu turno con este resultado ya cargado</span></span>
-        </button>
-      </div>
-    </details>
+    <a class="btn web" href="https://oviamigo.com/" target="_blank" rel="noopener">
+      <span class="icon" aria-hidden="true">🌐</span>
+      <span><span class="label">Mi página web</span><span class="detail">oviamigo.com, con los videos y el robot</span></span>
+    </a>
+    <a class="btn serv" href="https://oviamigo.com/servicios.html" target="_blank" rel="noopener">
+      <span class="icon" aria-hidden="true">📋</span>
+      <span><span class="label">Todos mis servicios, uno por uno</span><span class="detail">21 servicios: webs, videos, WhatsApp con IA, dominio y más</span></span>
+    </a>
+    <a class="btn bot" href="https://oviamigo.com/#chat" target="_blank" rel="noopener">
+      <span class="icon" aria-hidden="true">🤖</span>
+      <span><span class="label">Preguntale al robot</span><span class="detail">Más de 10.000 respuestas sobre IA para tu negocio</span></span>
+    </a>
 
   </nav>
 
@@ -251,24 +242,6 @@
 <script>
   (function () {
     var $ = function (id) { return document.getElementById(id); };
-    var fmt = function (n) { return $("c-cur").value + " " + Math.round(n).toLocaleString("es-PY"); };
-    var lastCalc = "";
-    var num = function (v) { var x = parseFloat(String(v).replace(/\./g, "").replace(",", ".")); return isFinite(x) && x > 0 ? x : 0; };
-    function calc() {
-      var lost = num($("c-lost").value), price = num($("c-price").value), days = num($("c-days").value);
-      var month = lost * price * days;
-      $("c-month").textContent = fmt(month);
-      $("c-year").textContent = "≈ " + fmt(month * 12) + " al año";
-      lastCalc = "Hice la cuenta: pierdo " + $("c-lost").value + " de " + $("c-in").value + " consultas por día y me da " + fmt(month) + " al mes en ventas.";
-      var inq = num($("c-in").value); $("c-rate").textContent = (inq && lost) ? "Perdés " + (Math.round(lost * 10) / 10).toLocaleString("es-PY") + " de cada " + Math.round(inq).toLocaleString("es-PY") + " consultas (" + Math.round(lost / inq * 100) + " %)" : "";
-    }
-    $("c-price").addEventListener("blur", function () { var p = num(this.value); this.value = p ? Math.round(p).toLocaleString("es-PY") : ""; });
-    ["c-in", "c-lost", "c-price", "c-days"].forEach(function (id) { $(id).addEventListener("input", calc); });
-    // moneda: valor típico de una venta para arrancar (en pesos se deja vacío, porque varía mucho según el país)
-    var VENTA_TIPICA = { "₲": 200000, "US$": 30, "€": 30, "$": 0, "R$": 150, "S/": 100, "Bs": 200 };
-    $("c-cur").addEventListener("change", function () { var v = VENTA_TIPICA[this.value]; $("c-price").value = v ? v.toLocaleString("es-PY") : ""; $("c-price").placeholder = v ? "" : "Tu precio"; calc(); });
-    calc();
-
     // ===== País del visitante (para el teléfono y la moneda). Es solo el valor inicial: se puede cambiar. =====
     var PAISES = [["PY","Paraguay","595"],["AR","Argentina","54"],["BO","Bolivia","591"],["BR","Brasil","55"],["CL","Chile","56"],["CO","Colombia","57"],["CR","Costa Rica","506"],["CU","Cuba","53"],["EC","Ecuador","593"],["SV","El Salvador","503"],["ES","España","34"],["US","Estados Unidos","1"],["GT","Guatemala","502"],["HN","Honduras","504"],["MX","México","52"],["NI","Nicaragua","505"],["PA","Panamá","507"],["PE","Perú","51"],["PR","Puerto Rico","1"],["DO","República Dominicana","1"],["UY","Uruguay","598"],["VE","Venezuela","58"],["DE","Alemania","49"],["CA","Canadá","1"],["FR","Francia","33"],["IT","Italia","39"],["PT","Portugal","351"],["GB","Reino Unido","44"],["","Otro país",""]];
     var ZONAS = { "America/Asuncion":"PY","America/Buenos_Aires":"AR","America/Cordoba":"AR","America/Sao_Paulo":"BR","America/Bahia":"BR","America/Fortaleza":"BR","America/Recife":"BR","America/Manaus":"BR","America/Belem":"BR","America/Cuiaba":"BR","America/Campo_Grande":"BR","America/Montevideo":"UY","America/Santiago":"CL","America/La_Paz":"BO","America/Lima":"PE","America/Bogota":"CO","America/Guayaquil":"EC","America/Caracas":"VE","America/Mexico_City":"MX","America/Monterrey":"MX","America/Tijuana":"MX","America/Cancun":"MX","America/Guatemala":"GT","America/El_Salvador":"SV","America/Tegucigalpa":"HN","America/Managua":"NI","America/Costa_Rica":"CR","America/Panama":"PA","America/Havana":"CU","America/Santo_Domingo":"DO","America/Puerto_Rico":"PR","Europe/Madrid":"ES","Atlantic/Canary":"ES","America/New_York":"US","America/Chicago":"US","America/Denver":"US","America/Los_Angeles":"US","America/Toronto":"CA","Europe/Lisbon":"PT","Europe/Rome":"IT","Europe/Paris":"FR","Europe/Berlin":"DE","Europe/London":"GB" };
@@ -281,20 +254,13 @@
       return 0;
     })();
     function bandera(iso) { return iso.length === 2 ? String.fromCodePoint(127397 + iso.charCodeAt(0), 127397 + iso.charCodeAt(1)) : "🌎"; }
-    (function () {
-      var moneda = { PY: "₲", AR: "$", MX: "$", CL: "$", CO: "$", UY: "$", BR: "R$", PE: "S/", BO: "Bs", ES: "€", DE: "€", FR: "€", IT: "€", PT: "€" }[PAISES[paisIdx][0]] || "US$";
-      if (moneda !== "₲") { $("c-cur").value = moneda; $("c-cur").dispatchEvent(new Event("change")); }
-      var pesos = { AR: 30000, MX: 500, CL: 25000, CO: 100000, UY: 1200 }[PAISES[paisIdx][0]];
-      if (moneda === "$" && pesos) { $("c-price").value = pesos.toLocaleString("es-PY"); calc(); }
-    })();
-
     // ===== Formulario de turnos =====
     // Pegá acá tu correo (o el alias que te da FormSubmit después de confirmar): "https://formsubmit.co/ajax/tucorreo@gmail.com"
     var FORM_ENDPOINT = "https://formsubmit.co/ajax/armoaalen@gmail.com";
     // Planilla de turnos (Google Apps Script). Cuando pegues acá tu URL que termina en /exec, los pedidos van a la planilla y ya no por FormSubmit.
     var SHEET_ENDPOINT = "PEGAR_URL_EXEC";
     var USA_PLANILLA = SHEET_ENDPOINT.indexOf("https://script.google.com/") === 0;
-    var WA_HOME = "https://www.instagram.com/oviamigo";
+    var WA_HOME = "https://www.instagram.com/oviamigoo";
     // Aviso por WhatsApp con CallMeBot (gratis, uso personal). Pegá tu apikey; WA_TODOS = true para recibir también los que pueden esperar.
     var CMB_PHONE = "+595992432743", CMB_KEY = "2597028", WA_TODOS = false;
     function avisoWhatsApp(hot) {
@@ -355,7 +321,8 @@
       { g: "🌐 Web y presencia", items: ["🌐 Página web para tu negocio", "🔗 Página de enlaces como esta", "📅 Turnos y reservas online", "🧮 Calculadoras y formularios interactivos"] },
       { g: "🎬 Contenido para redes", items: ["🎬 Edición de videos y reels", "🖼️ Miniaturas y portadas", "🎨 Banners y fotos de perfil", "✍️ Guiones y textos para tus videos", "🗓️ Plan de contenido del mes"] },
       { g: "🤖 WhatsApp e IA", items: ["💬 WhatsApp Business bien configurado", "🤖 Asistente con IA para WhatsApp", "🔔 Avisos automáticos de pedidos y turnos", "📊 Planilla de clientes conectada a tu calendario"] },
-      { g: "🎓 Aprender y usar", items: ["🧑‍🏫 Capacitación en IA para tu equipo", "📦 Plantillas y sistemas listos para usar"] }
+      { g: "🎓 Aprender y usar", items: ["🧑‍🏫 Capacitación en IA para tu equipo", "📦 Plantillas y sistemas listos para usar"] },
+      { g: "✨ Dominio y más con IA", items: ["🏷️ Dominio y correo profesional", "📸 Imágenes y fotos de producto con IA", "🎙️ Voz, subtítulos y videos con IA", "📝 Textos y catálogos con IA", "📄 Presentaciones e informes con IA", "📈 Planillas y reportes automáticos"] }
     ];
     function start() {
       if (started) return; started = true; setStep(1);
@@ -477,11 +444,6 @@
         });
     }
     $("f-card").addEventListener("toggle", function () { if ($("f-card").open) start(); });
-    $("c-send").addEventListener("click", function () {
-      st.cuenta = lastCalc; var card = $("f-card");
-      if (!card.open) card.open = true; else if (!started) start();
-      card.scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: "start" });
-    });
   })();
 </script>
 </body>
